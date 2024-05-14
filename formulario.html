@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Postulación - Apoyo Ambiental Chiloé</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Formulario de Postulación - Apoyo Ambiental Chiloé</h1>
+    <form id="postulacionForm">
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" required>
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" id="apellidoPaterno" required>
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" id="apellidoMaterno" required>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+        <label for="genero">Género:</label>
+        <select id="genero" required>
+            <option value="">Seleccionar</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" required>
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" required>
+        <label for="motivacion">Motivación:</label>
+        <textarea id="motivacion" required></textarea>
+        <button type="submit">Enviar</button>
+        <button type="button" id="crearCarta">Crear Carta</button>
+    </form>
+    <textarea id="carta" rows="10" cols="50" readonly></textarea>
+    <script src="valida.js"></script>
+</body>
+</html>
